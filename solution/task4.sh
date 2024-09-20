@@ -1,1 +1,1 @@
-sed "s/"Живи"/"Не спи"/g" data/blok.txt | sed "s/"Умрёшь"/"Уснёшь"/g" data/blok.txt | cat > data/blok_kids_edition.txt 
+sed -e "s/Живи/Не спи/g" -e "s/Умрёшь/Уснёшь/g" data/blok.txt | cat > data/blok_kids_edition.txt 
