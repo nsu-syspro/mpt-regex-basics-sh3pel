@@ -1,1 +1,1 @@
-cat data/students.csv | sed -E  "s/([а-яА-Я]+) ([а-яА-Я]+)( [а-яА-Я]+)?,([0-9]+)/\2 \1 \4/g" > data/students.txt
+sed -Ee "s/(\S*) (\S*).*,([0-9]+)/\2 \1 \3/g" data/students.csv | cat > data/students.txt
